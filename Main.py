@@ -3,14 +3,14 @@ import random
 from tkinter import *
 
 def stanger():
-    with open('C://Users//Asus//Desktop//coding//Python//NewPhoneWhoDis//stranger.json', 'r') as file:
+    with open('FilePath//NewPhoneWhoDis//stranger.json', 'r') as file:
         data = json.load(file)
     list = data["stranger"]
     response = random.choice(list)
     return response
 
 def you():
-    with open('C://Users//Asus//Desktop//coding//Python//NewPhoneWhoDis//you.json', 'r') as file:
+    with open('FilePath//NewPhoneWhoDis//you.json', 'r') as file:
         data = json.load(file)
     list = data["you"]
     response = random.choice(list)
@@ -25,7 +25,7 @@ def app():
     
     root = Tk()
     root.title("NewPhoneWhoDis!")
-    icon_path = "C:\\Users\\Asus\\Desktop\\coding\\Python\\NewPhoneWhoDis\\icon.png"
+    icon_path = "FilePath\\NewPhoneWhoDis\\icon.png"
     icon = PhotoImage(file=icon_path)
     root.iconphoto(False, icon)
     
